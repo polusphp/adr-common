@@ -39,7 +39,7 @@ jobs:
                   tools: "composer:v2"
 
             - name: "Checkout"
-              uses: "actions/checkout@v2"
+              uses: "actions/checkout@v4"
 
             - name: "Install lowest dependencies"
               if: ${{ matrix.dependencies == 'lowest' }}
@@ -65,7 +65,7 @@ jobs:
                     php-version: '8.2'
 
             - name: "Checkout"
-              uses: "actions/checkout@v2"
+              uses: "actions/checkout@v4"
 
             - name: "Install latest dependencies"
               run: "composer update ${{ env.COMPOSER_FLAGS }}"

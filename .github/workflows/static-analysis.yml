@@ -26,7 +26,7 @@ jobs:
           php-version: "${{ matrix.php-version }}"
 
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@v4"
 
       - name: "Install latest dependencies"
         run: "composer update ${{ env.COMPOSER_FLAGS }}"
