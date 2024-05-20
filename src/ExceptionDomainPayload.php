@@ -5,7 +5,7 @@ namespace Polus\Adr;
 use PayloadInterop\DomainPayload;
 use PayloadInterop\DomainStatus;
 
-final class ExceptionDomainPayload implements DomainPayload
+final readonly class ExceptionDomainPayload implements DomainPayload
 {
     public function __construct(
         private \Throwable $exception,

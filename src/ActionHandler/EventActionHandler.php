@@ -10,7 +10,7 @@ use Polus\Adr\Interfaces\Resolver;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-final class EventActionHandler implements Handler
+final readonly class EventActionHandler implements Handler
 {
     public function __construct(
         private Resolver $resolver,

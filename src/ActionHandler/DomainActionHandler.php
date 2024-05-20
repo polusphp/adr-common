@@ -8,7 +8,7 @@ use Polus\Adr\Interfaces\DomainAction;
 use Polus\Adr\Interfaces\Resolver;
 use Psr\Http\Message\ServerRequestInterface;
 
-final class DomainActionHandler implements Handler
+final readonly class DomainActionHandler implements Handler
 {
     public function __construct(
         private Resolver $resolver,

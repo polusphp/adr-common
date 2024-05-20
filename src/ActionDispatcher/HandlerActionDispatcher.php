@@ -34,8 +34,8 @@ final class HandlerActionDispatcher implements ActionDispatcher
     }
 
     public function __construct(
-        private Resolver $resolver,
-        private ResponseFactoryInterface $responseFactory,
+        private readonly Resolver $resolver,
+        private readonly ResponseFactoryInterface $responseFactory,
         private ExceptionHandler $exceptionHandler,
         Handler ...$handlers,
     ) {
